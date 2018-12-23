@@ -1,0 +1,873 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `mixer` mod in crate `sdl2_sys`."><meta name="keywords" content="rust, rustlang, rust-lang, mixer"><title>sdl2_sys::mixer - Rust</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css"><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script src="../../storage.js"></script></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Module mixer</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../index.html'>sdl2_sys</a></p><script>window.sidebarCurrent = {name: 'mixer', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../../src/sdl2_sys/mixer.rs.html#1-2' title='goto source code'>[src]</a></span><span class='in-band'>Module <a href='../index.html'>sdl2_sys</a>::<wbr><a class="mod" href=''>mixer</a></span></h1><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Mix_Chunk.html"
+                                  title='struct sdl2_sys::mixer::Mix_Chunk'>Mix_Chunk</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct._Mix_Music.html"
+                                  title='struct sdl2_sys::mixer::_Mix_Music'>_Mix_Music</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_CHANNELS.html"
+                                  title='constant sdl2_sys::mixer::MIX_CHANNELS'>MIX_CHANNELS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_CHANNEL_POST.html"
+                                  title='constant sdl2_sys::mixer::MIX_CHANNEL_POST'>MIX_CHANNEL_POST</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_DEFAULT_CHANNELS.html"
+                                  title='constant sdl2_sys::mixer::MIX_DEFAULT_CHANNELS'>MIX_DEFAULT_CHANNELS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_DEFAULT_FORMAT.html"
+                                  title='constant sdl2_sys::mixer::MIX_DEFAULT_FORMAT'>MIX_DEFAULT_FORMAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_DEFAULT_FREQUENCY.html"
+                                  title='constant sdl2_sys::mixer::MIX_DEFAULT_FREQUENCY'>MIX_DEFAULT_FREQUENCY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_EFFECTSMAXSPEED.html"
+                                  title='constant sdl2_sys::mixer::MIX_EFFECTSMAXSPEED'>MIX_EFFECTSMAXSPEED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_InitFlags_MIX_INIT_FLAC.html"
+                                  title='constant sdl2_sys::mixer::MIX_InitFlags_MIX_INIT_FLAC'>MIX_InitFlags_MIX_INIT_FLAC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_InitFlags_MIX_INIT_MID.html"
+                                  title='constant sdl2_sys::mixer::MIX_InitFlags_MIX_INIT_MID'>MIX_InitFlags_MIX_INIT_MID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_InitFlags_MIX_INIT_MOD.html"
+                                  title='constant sdl2_sys::mixer::MIX_InitFlags_MIX_INIT_MOD'>MIX_InitFlags_MIX_INIT_MOD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_InitFlags_MIX_INIT_MP3.html"
+                                  title='constant sdl2_sys::mixer::MIX_InitFlags_MIX_INIT_MP3'>MIX_InitFlags_MIX_INIT_MP3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_InitFlags_MIX_INIT_OGG.html"
+                                  title='constant sdl2_sys::mixer::MIX_InitFlags_MIX_INIT_OGG'>MIX_InitFlags_MIX_INIT_OGG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_MAJOR_VERSION.html"
+                                  title='constant sdl2_sys::mixer::MIX_MAJOR_VERSION'>MIX_MAJOR_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_MAX_VOLUME.html"
+                                  title='constant sdl2_sys::mixer::MIX_MAX_VOLUME'>MIX_MAX_VOLUME</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_MINOR_VERSION.html"
+                                  title='constant sdl2_sys::mixer::MIX_MINOR_VERSION'>MIX_MINOR_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIX_PATCHLEVEL.html"
+                                  title='constant sdl2_sys::mixer::MIX_PATCHLEVEL'>MIX_PATCHLEVEL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_Fading_MIX_FADING_IN.html"
+                                  title='constant sdl2_sys::mixer::Mix_Fading_MIX_FADING_IN'>Mix_Fading_MIX_FADING_IN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_Fading_MIX_FADING_OUT.html"
+                                  title='constant sdl2_sys::mixer::Mix_Fading_MIX_FADING_OUT'>Mix_Fading_MIX_FADING_OUT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_Fading_MIX_NO_FADING.html"
+                                  title='constant sdl2_sys::mixer::Mix_Fading_MIX_NO_FADING'>Mix_Fading_MIX_NO_FADING</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_CMD.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_CMD'>Mix_MusicType_MUS_CMD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_FLAC.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_FLAC'>Mix_MusicType_MUS_FLAC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_MID.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_MID'>Mix_MusicType_MUS_MID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_MOD.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_MOD'>Mix_MusicType_MUS_MOD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_MODPLUG_UNUSED.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_MODPLUG_UNUSED'>Mix_MusicType_MUS_MODPLUG_UNUSED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_MP3.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_MP3'>Mix_MusicType_MUS_MP3</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_MP3_MAD_UNUSED.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_MP3_MAD_UNUSED'>Mix_MusicType_MUS_MP3_MAD_UNUSED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_NONE.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_NONE'>Mix_MusicType_MUS_NONE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_OGG.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_OGG'>Mix_MusicType_MUS_OGG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.Mix_MusicType_MUS_WAV.html"
+                                  title='constant sdl2_sys::mixer::Mix_MusicType_MUS_WAV'>Mix_MusicType_MUS_WAV</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_AllocateChannels.html"
+                                  title='fn sdl2_sys::mixer::Mix_AllocateChannels'>Mix_AllocateChannels</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_ChannelFinished.html"
+                                  title='fn sdl2_sys::mixer::Mix_ChannelFinished'>Mix_ChannelFinished</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_CloseAudio.html"
+                                  title='fn sdl2_sys::mixer::Mix_CloseAudio'>Mix_CloseAudio</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_EachSoundFont.html"
+                                  title='fn sdl2_sys::mixer::Mix_EachSoundFont'>Mix_EachSoundFont</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_ExpireChannel.html"
+                                  title='fn sdl2_sys::mixer::Mix_ExpireChannel'>Mix_ExpireChannel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadeInChannelTimed.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadeInChannelTimed'>Mix_FadeInChannelTimed</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadeInMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadeInMusic'>Mix_FadeInMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadeInMusicPos.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadeInMusicPos'>Mix_FadeInMusicPos</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadeOutChannel.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadeOutChannel'>Mix_FadeOutChannel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadeOutGroup.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadeOutGroup'>Mix_FadeOutGroup</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadeOutMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadeOutMusic'>Mix_FadeOutMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadingChannel.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadingChannel'>Mix_FadingChannel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FadingMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_FadingMusic'>Mix_FadingMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FreeChunk.html"
+                                  title='fn sdl2_sys::mixer::Mix_FreeChunk'>Mix_FreeChunk</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_FreeMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_FreeMusic'>Mix_FreeMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetChunk.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetChunk'>Mix_GetChunk</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetChunkDecoder.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetChunkDecoder'>Mix_GetChunkDecoder</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetMusicDecoder.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetMusicDecoder'>Mix_GetMusicDecoder</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetMusicHookData.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetMusicHookData'>Mix_GetMusicHookData</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetMusicType.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetMusicType'>Mix_GetMusicType</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetNumChunkDecoders.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetNumChunkDecoders'>Mix_GetNumChunkDecoders</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetNumMusicDecoders.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetNumMusicDecoders'>Mix_GetNumMusicDecoders</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetSoundFonts.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetSoundFonts'>Mix_GetSoundFonts</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GetSynchroValue.html"
+                                  title='fn sdl2_sys::mixer::Mix_GetSynchroValue'>Mix_GetSynchroValue</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GroupAvailable.html"
+                                  title='fn sdl2_sys::mixer::Mix_GroupAvailable'>Mix_GroupAvailable</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GroupChannel.html"
+                                  title='fn sdl2_sys::mixer::Mix_GroupChannel'>Mix_GroupChannel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GroupChannels.html"
+                                  title='fn sdl2_sys::mixer::Mix_GroupChannels'>Mix_GroupChannels</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GroupCount.html"
+                                  title='fn sdl2_sys::mixer::Mix_GroupCount'>Mix_GroupCount</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GroupNewer.html"
+                                  title='fn sdl2_sys::mixer::Mix_GroupNewer'>Mix_GroupNewer</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_GroupOldest.html"
+                                  title='fn sdl2_sys::mixer::Mix_GroupOldest'>Mix_GroupOldest</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HaltChannel.html"
+                                  title='fn sdl2_sys::mixer::Mix_HaltChannel'>Mix_HaltChannel</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HaltGroup.html"
+                                  title='fn sdl2_sys::mixer::Mix_HaltGroup'>Mix_HaltGroup</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HaltMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_HaltMusic'>Mix_HaltMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HasChunkDecoder.html"
+                                  title='fn sdl2_sys::mixer::Mix_HasChunkDecoder'>Mix_HasChunkDecoder</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HasMusicDecoder.html"
+                                  title='fn sdl2_sys::mixer::Mix_HasMusicDecoder'>Mix_HasMusicDecoder</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HookMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_HookMusic'>Mix_HookMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_HookMusicFinished.html"
+                                  title='fn sdl2_sys::mixer::Mix_HookMusicFinished'>Mix_HookMusicFinished</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Init.html"
+                                  title='fn sdl2_sys::mixer::Mix_Init'>Mix_Init</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Linked_Version.html"
+                                  title='fn sdl2_sys::mixer::Mix_Linked_Version'>Mix_Linked_Version</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_LoadMUS.html"
+                                  title='fn sdl2_sys::mixer::Mix_LoadMUS'>Mix_LoadMUS</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_LoadMUSType_RW.html"
+                                  title='fn sdl2_sys::mixer::Mix_LoadMUSType_RW'>Mix_LoadMUSType_RW</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_LoadMUS_RW.html"
+                                  title='fn sdl2_sys::mixer::Mix_LoadMUS_RW'>Mix_LoadMUS_RW</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_LoadWAV_RW.html"
+                                  title='fn sdl2_sys::mixer::Mix_LoadWAV_RW'>Mix_LoadWAV_RW</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_OpenAudio.html"
+                                  title='fn sdl2_sys::mixer::Mix_OpenAudio'>Mix_OpenAudio</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_OpenAudioDevice.html"
+                                  title='fn sdl2_sys::mixer::Mix_OpenAudioDevice'>Mix_OpenAudioDevice</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Pause.html"
+                                  title='fn sdl2_sys::mixer::Mix_Pause'>Mix_Pause</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_PauseMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_PauseMusic'>Mix_PauseMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Paused.html"
+                                  title='fn sdl2_sys::mixer::Mix_Paused'>Mix_Paused</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_PausedMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_PausedMusic'>Mix_PausedMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_PlayChannelTimed.html"
+                                  title='fn sdl2_sys::mixer::Mix_PlayChannelTimed'>Mix_PlayChannelTimed</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_PlayMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_PlayMusic'>Mix_PlayMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Playing.html"
+                                  title='fn sdl2_sys::mixer::Mix_Playing'>Mix_Playing</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_PlayingMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_PlayingMusic'>Mix_PlayingMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_QuerySpec.html"
+                                  title='fn sdl2_sys::mixer::Mix_QuerySpec'>Mix_QuerySpec</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_QuickLoad_RAW.html"
+                                  title='fn sdl2_sys::mixer::Mix_QuickLoad_RAW'>Mix_QuickLoad_RAW</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_QuickLoad_WAV.html"
+                                  title='fn sdl2_sys::mixer::Mix_QuickLoad_WAV'>Mix_QuickLoad_WAV</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Quit.html"
+                                  title='fn sdl2_sys::mixer::Mix_Quit'>Mix_Quit</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_RegisterEffect.html"
+                                  title='fn sdl2_sys::mixer::Mix_RegisterEffect'>Mix_RegisterEffect</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_ReserveChannels.html"
+                                  title='fn sdl2_sys::mixer::Mix_ReserveChannels'>Mix_ReserveChannels</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Resume.html"
+                                  title='fn sdl2_sys::mixer::Mix_Resume'>Mix_Resume</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_ResumeMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_ResumeMusic'>Mix_ResumeMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_RewindMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_RewindMusic'>Mix_RewindMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetDistance.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetDistance'>Mix_SetDistance</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetMusicCMD.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetMusicCMD'>Mix_SetMusicCMD</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetMusicPosition.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetMusicPosition'>Mix_SetMusicPosition</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetPanning.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetPanning'>Mix_SetPanning</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetPosition.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetPosition'>Mix_SetPosition</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetPostMix.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetPostMix'>Mix_SetPostMix</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetReverseStereo.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetReverseStereo'>Mix_SetReverseStereo</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetSoundFonts.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetSoundFonts'>Mix_SetSoundFonts</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_SetSynchroValue.html"
+                                  title='fn sdl2_sys::mixer::Mix_SetSynchroValue'>Mix_SetSynchroValue</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_UnregisterAllEffects.html"
+                                  title='fn sdl2_sys::mixer::Mix_UnregisterAllEffects'>Mix_UnregisterAllEffects</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_UnregisterEffect.html"
+                                  title='fn sdl2_sys::mixer::Mix_UnregisterEffect'>Mix_UnregisterEffect</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_Volume.html"
+                                  title='fn sdl2_sys::mixer::Mix_Volume'>Mix_Volume</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_VolumeChunk.html"
+                                  title='fn sdl2_sys::mixer::Mix_VolumeChunk'>Mix_VolumeChunk</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Mix_VolumeMusic.html"
+                                  title='fn sdl2_sys::mixer::Mix_VolumeMusic'>Mix_VolumeMusic</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.MIX_InitFlags.html"
+                                  title='type sdl2_sys::mixer::MIX_InitFlags'>MIX_InitFlags</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Mix_EffectDone_t.html"
+                                  title='type sdl2_sys::mixer::Mix_EffectDone_t'>Mix_EffectDone_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Mix_EffectFunc_t.html"
+                                  title='type sdl2_sys::mixer::Mix_EffectFunc_t'>Mix_EffectFunc_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Mix_Fading.html"
+                                  title='type sdl2_sys::mixer::Mix_Fading'>Mix_Fading</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Mix_Music.html"
+                                  title='type sdl2_sys::mixer::Mix_Music'>Mix_Music</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Mix_MusicType.html"
+                                  title='type sdl2_sys::mixer::Mix_MusicType'>Mix_MusicType</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Sint16.html"
+                                  title='type sdl2_sys::mixer::Sint16'>Sint16</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Sint64.html"
+                                  title='type sdl2_sys::mixer::Sint64'>Sint64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Uint8.html"
+                                  title='type sdl2_sys::mixer::Uint8'>Uint8</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Uint16.html"
+                                  title='type sdl2_sys::mixer::Uint16'>Uint16</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Uint32.html"
+                                  title='type sdl2_sys::mixer::Uint32'>Uint32</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__int16_t.html"
+                                  title='type sdl2_sys::mixer::__int16_t'>__int16_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__int64_t.html"
+                                  title='type sdl2_sys::mixer::__int64_t'>__int64_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__off64_t.html"
+                                  title='type sdl2_sys::mixer::__off64_t'>__off64_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__off_t.html"
+                                  title='type sdl2_sys::mixer::__off_t'>__off_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__uint8_t.html"
+                                  title='type sdl2_sys::mixer::__uint8_t'>__uint8_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__uint16_t.html"
+                                  title='type sdl2_sys::mixer::__uint16_t'>__uint16_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__uint32_t.html"
+                                  title='type sdl2_sys::mixer::__uint32_t'>__uint32_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../../";window.currentCrate = "sdl2_sys";</script><script src="../../aliases.js"></script><script src="../../main.js"></script><script defer src="../../search-index.js"></script></body></html>

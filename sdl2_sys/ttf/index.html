@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `ttf` mod in crate `sdl2_sys`."><meta name="keywords" content="rust, rustlang, rust-lang, ttf"><title>sdl2_sys::ttf - Rust</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css"><link rel="stylesheet" type="text/css" href="../../light.css" id="themeStyle"><script src="../../storage.js"></script></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Module ttf</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#constants">Constants</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../index.html'>sdl2_sys</a></p><script>window.sidebarCurrent = {name: 'ttf', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../../src/sdl2_sys/ttf.rs.html#1-2' title='goto source code'>[src]</a></span><span class='in-band'>Module <a href='../index.html'>sdl2_sys</a>::<wbr><a class="mod" href=''>ttf</a></span></h1><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct._TTF_Font.html"
+                                  title='struct sdl2_sys::ttf::_TTF_Font'>_TTF_Font</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_HINTING_LIGHT.html"
+                                  title='constant sdl2_sys::ttf::TTF_HINTING_LIGHT'>TTF_HINTING_LIGHT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_HINTING_MONO.html"
+                                  title='constant sdl2_sys::ttf::TTF_HINTING_MONO'>TTF_HINTING_MONO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_HINTING_NONE.html"
+                                  title='constant sdl2_sys::ttf::TTF_HINTING_NONE'>TTF_HINTING_NONE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_HINTING_NORMAL.html"
+                                  title='constant sdl2_sys::ttf::TTF_HINTING_NORMAL'>TTF_HINTING_NORMAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_MAJOR_VERSION.html"
+                                  title='constant sdl2_sys::ttf::TTF_MAJOR_VERSION'>TTF_MAJOR_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_MINOR_VERSION.html"
+                                  title='constant sdl2_sys::ttf::TTF_MINOR_VERSION'>TTF_MINOR_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_PATCHLEVEL.html"
+                                  title='constant sdl2_sys::ttf::TTF_PATCHLEVEL'>TTF_PATCHLEVEL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_STYLE_BOLD.html"
+                                  title='constant sdl2_sys::ttf::TTF_STYLE_BOLD'>TTF_STYLE_BOLD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_STYLE_ITALIC.html"
+                                  title='constant sdl2_sys::ttf::TTF_STYLE_ITALIC'>TTF_STYLE_ITALIC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_STYLE_NORMAL.html"
+                                  title='constant sdl2_sys::ttf::TTF_STYLE_NORMAL'>TTF_STYLE_NORMAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_STYLE_STRIKETHROUGH.html"
+                                  title='constant sdl2_sys::ttf::TTF_STYLE_STRIKETHROUGH'>TTF_STYLE_STRIKETHROUGH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TTF_STYLE_UNDERLINE.html"
+                                  title='constant sdl2_sys::ttf::TTF_STYLE_UNDERLINE'>TTF_STYLE_UNDERLINE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_ByteSwappedUNICODE.html"
+                                  title='fn sdl2_sys::ttf::TTF_ByteSwappedUNICODE'>TTF_ByteSwappedUNICODE</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_CloseFont.html"
+                                  title='fn sdl2_sys::ttf::TTF_CloseFont'>TTF_CloseFont</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontAscent.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontAscent'>TTF_FontAscent</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontDescent.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontDescent'>TTF_FontDescent</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontFaceFamilyName.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontFaceFamilyName'>TTF_FontFaceFamilyName</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontFaceIsFixedWidth.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontFaceIsFixedWidth'>TTF_FontFaceIsFixedWidth</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontFaceStyleName.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontFaceStyleName'>TTF_FontFaceStyleName</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontFaces.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontFaces'>TTF_FontFaces</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontHeight.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontHeight'>TTF_FontHeight</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_FontLineSkip.html"
+                                  title='fn sdl2_sys::ttf::TTF_FontLineSkip'>TTF_FontLineSkip</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GetFontHinting.html"
+                                  title='fn sdl2_sys::ttf::TTF_GetFontHinting'>TTF_GetFontHinting</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GetFontKerning.html"
+                                  title='fn sdl2_sys::ttf::TTF_GetFontKerning'>TTF_GetFontKerning</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GetFontKerningSize.html"
+                                  title='fn sdl2_sys::ttf::TTF_GetFontKerningSize'>TTF_GetFontKerningSize</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GetFontKerningSizeGlyphs.html"
+                                  title='fn sdl2_sys::ttf::TTF_GetFontKerningSizeGlyphs'>TTF_GetFontKerningSizeGlyphs</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GetFontOutline.html"
+                                  title='fn sdl2_sys::ttf::TTF_GetFontOutline'>TTF_GetFontOutline</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GetFontStyle.html"
+                                  title='fn sdl2_sys::ttf::TTF_GetFontStyle'>TTF_GetFontStyle</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GlyphIsProvided.html"
+                                  title='fn sdl2_sys::ttf::TTF_GlyphIsProvided'>TTF_GlyphIsProvided</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_GlyphMetrics.html"
+                                  title='fn sdl2_sys::ttf::TTF_GlyphMetrics'>TTF_GlyphMetrics</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_Init.html"
+                                  title='fn sdl2_sys::ttf::TTF_Init'>TTF_Init</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_Linked_Version.html"
+                                  title='fn sdl2_sys::ttf::TTF_Linked_Version'>TTF_Linked_Version</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_OpenFont.html"
+                                  title='fn sdl2_sys::ttf::TTF_OpenFont'>TTF_OpenFont</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_OpenFontIndex.html"
+                                  title='fn sdl2_sys::ttf::TTF_OpenFontIndex'>TTF_OpenFontIndex</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_OpenFontIndexRW.html"
+                                  title='fn sdl2_sys::ttf::TTF_OpenFontIndexRW'>TTF_OpenFontIndexRW</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_OpenFontRW.html"
+                                  title='fn sdl2_sys::ttf::TTF_OpenFontRW'>TTF_OpenFontRW</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_Quit.html"
+                                  title='fn sdl2_sys::ttf::TTF_Quit'>TTF_Quit</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderGlyph_Blended.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderGlyph_Blended'>TTF_RenderGlyph_Blended</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderGlyph_Shaded.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderGlyph_Shaded'>TTF_RenderGlyph_Shaded</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderGlyph_Solid.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderGlyph_Solid'>TTF_RenderGlyph_Solid</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderText_Blended.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderText_Blended'>TTF_RenderText_Blended</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderText_Blended_Wrapped.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderText_Blended_Wrapped'>TTF_RenderText_Blended_Wrapped</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderText_Shaded.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderText_Shaded'>TTF_RenderText_Shaded</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderText_Solid.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderText_Solid'>TTF_RenderText_Solid</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUNICODE_Blended.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUNICODE_Blended'>TTF_RenderUNICODE_Blended</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUNICODE_Blended_Wrapped.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUNICODE_Blended_Wrapped'>TTF_RenderUNICODE_Blended_Wrapped</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUNICODE_Shaded.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUNICODE_Shaded'>TTF_RenderUNICODE_Shaded</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUNICODE_Solid.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUNICODE_Solid'>TTF_RenderUNICODE_Solid</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUTF8_Solid.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUTF8_Solid'>TTF_RenderUTF8_Solid</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUTF8_Shaded.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUTF8_Shaded'>TTF_RenderUTF8_Shaded</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUTF8_Blended.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUTF8_Blended'>TTF_RenderUTF8_Blended</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_RenderUTF8_Blended_Wrapped.html"
+                                  title='fn sdl2_sys::ttf::TTF_RenderUTF8_Blended_Wrapped'>TTF_RenderUTF8_Blended_Wrapped</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SetFontHinting.html"
+                                  title='fn sdl2_sys::ttf::TTF_SetFontHinting'>TTF_SetFontHinting</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SetFontKerning.html"
+                                  title='fn sdl2_sys::ttf::TTF_SetFontKerning'>TTF_SetFontKerning</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SetFontOutline.html"
+                                  title='fn sdl2_sys::ttf::TTF_SetFontOutline'>TTF_SetFontOutline</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SetFontStyle.html"
+                                  title='fn sdl2_sys::ttf::TTF_SetFontStyle'>TTF_SetFontStyle</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SizeText.html"
+                                  title='fn sdl2_sys::ttf::TTF_SizeText'>TTF_SizeText</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SizeUNICODE.html"
+                                  title='fn sdl2_sys::ttf::TTF_SizeUNICODE'>TTF_SizeUNICODE</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_SizeUTF8.html"
+                                  title='fn sdl2_sys::ttf::TTF_SizeUTF8'>TTF_SizeUTF8</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.TTF_WasInit.html"
+                                  title='fn sdl2_sys::ttf::TTF_WasInit'>TTF_WasInit</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Sint64.html"
+                                  title='type sdl2_sys::ttf::Sint64'>Sint64</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.TTF_Font.html"
+                                  title='type sdl2_sys::ttf::TTF_Font'>TTF_Font</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Uint8.html"
+                                  title='type sdl2_sys::ttf::Uint8'>Uint8</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Uint16.html"
+                                  title='type sdl2_sys::ttf::Uint16'>Uint16</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.Uint32.html"
+                                  title='type sdl2_sys::ttf::Uint32'>Uint32</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__int64_t.html"
+                                  title='type sdl2_sys::ttf::__int64_t'>__int64_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__off64_t.html"
+                                  title='type sdl2_sys::ttf::__off64_t'>__off64_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__off_t.html"
+                                  title='type sdl2_sys::ttf::__off_t'>__off_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__uint8_t.html"
+                                  title='type sdl2_sys::ttf::__uint8_t'>__uint8_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__uint16_t.html"
+                                  title='type sdl2_sys::ttf::__uint16_t'>__uint16_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="type" href="type.__uint32_t.html"
+                                  title='type sdl2_sys::ttf::__uint32_t'>__uint32_t</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../../";window.currentCrate = "sdl2_sys";</script><script src="../../aliases.js"></script><script src="../../main.js"></script><script defer src="../../search-index.js"></script></body></html>
